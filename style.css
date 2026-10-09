@@ -517,98 +517,113 @@ footer p {
 /*media queries*/
 @media (max-width: 768px) {
     nav, .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-        text-align: center;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding: 20px !important;
+        text-align: center !important;
     }
 
     nav a, .nav-link {
-        margin: 5px 10px;
+        margin: 5px 10px !important;
+        display: inline-block !important;
     }
 
     .main {
-        padding: 50px 20px;
+        padding: 50px 20px !important;
     }
 
     .main h1, .main .hero-title {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
 
     .main h2, .main h3, .main h4, .main .aspiring-text {
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
     }
 
     .main p, .main .desc-text {
-        font-size: 1rem;
-        max-width: 100%;
+        font-size: 1rem !important;
+        max-width: 100% !important;
+    }
+
+    /* ABOUT SECTION OVERLAP FIX - Yahan se overlap permanently theek hoga */
+    .about, #about, .about-section {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        padding: 60px 20px !important;
+        gap: 20px !important;
+    }
+
+    .about img, .about-pic, .about-img, .about img[src*="about"] {
+        max-width: 240px !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto 20px auto !important;
+        position: static !important; /* Absolute or fixed elements ko flow mein laya */
+        float: none !important;
+    }
+
+    .about-content, .about-text, .about .text {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .skills {
-        padding: 50px 20px;
+        padding: 50px 20px !important;
     }
 
     .skills h2 {
-        font-size: 26px;
+        font-size: 26px !important;
     }
 
     .skills-container {
-        flex-direction: column;
-        align-items: center;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     .skill-card {
-        width: 100%;
-        max-width: 300px;
+        width: 100% !important;
+        max-width: 300px !important;
     }
 
     .projects {
-        padding: 50px 20px;
+        padding: 50px 20px !important;
     }
 
     .projects-container, .project-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
     }
 
     .project-card {
-        width: 100%;
-        max-width: 320px;
+        width: 100% !important;
+        max-width: 320px !important;
     }
 
     .contact {
-        padding: 50px 20px;
+        padding: 50px 20px !important;
     }
 
     .contact h2 {
-        font-size: 26px;
+        font-size: 26px !important;
     }
 
     .contact-container, .contact-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
     }
 
     .contact-info, .contact-form {
         width: 100% !important;
-        max-width: 100%;
+        max-width: 100% !important;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
