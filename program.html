@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+ 
+<div class="navbar">
+    <h2 class="logo"><b>AIZA BIBI</b></h2>
+    <div class="links">
+        <a href="#home">home</a>
+        <a href="#skill">skills</a>
+        <a href="#project">projects</a>
+        <a href="#contact">contact me</a>
+    </div>
+</div>
+
+<div  id="home" class="main">  
+    <h1>Hi, I am Aiza</h1>
+   <h4> Aspiring Fronthend developer</h4>
+   <p>I am a BS Information Technology student
+ passionate about web development and
+ creating clean, user-friendly websites.</p>
+ 
+ <a href="#project"><button class="botn" >view my work</button></a> 
+</div>
+  
+<section  id="about"class="about">
+
+    <h2>About Me</h2>
+
+    <div class="book">
+        
+
+        <div class="about-image">
+           <img src="avater.png" alt="Developer Avatar" class="pic">
+
+        </div>
+
+        <div class="about-text">
+
+            <p>
+                I am Aiza Bibi, a BS Information Technology student
+                with an interest in web development.
+            </p>
+
+            <p>
+                I enjoy learning new technologies and creating simple,
+                user-friendly websites.
+            </p>
+
+            <p>
+                I am currently developing my skills in HTML, CSS and
+                other web technologies.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section  id="skill" class="skills">
+
+    <h2>My Skills</h2>
+
+    <p>
+        Here are some of the technologies and skills I am currently
+        learning and developing.
+    </p>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>
+                Used to create the structure and content of web pages.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>
+                Used to style websites, including colors, layouts,
+                spacing and fonts.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>C++</h3>
+            <p>
+                Used for programming concepts, data structures
+                and problem solving.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>SQL</h3>
+            <p>
+                Used to work with databases and manage data.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Data Structures</h3>
+            <p>
+                Knowledge of arrays, linked lists, stacks, queues,
+                trees and graphs.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Web Development</h3>
+            <p>
+                Currently learning how to build and design websites
+                using HTML and CSS.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<section  id="project" class="projects">
+
+    <h2>My Projects</h2>
+
+    <p>
+        Here are some of the projects I have created while learning
+        and practicing web development.
+    </p>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+                A personal portfolio website created using HTML and CSS
+                to showcase my skills, projects and background.
+            </p>
+
+<a href="#home"   ><button>View Project</button></a>         
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>HTML/CSS Practice Website</h3>
+
+            <p>
+                A simple website created using HTML and CSS to practice
+                webpage structure, layouts and styling.
+            </p>
+
+            <button onclick="alert('This project is currently under development! Stay tuned')">View Project</button>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>Student Project</h3>
+
+            <p>
+                A student project created as part of my learning and
+                practice in programming and web technologies.
+            </p>
+
+            <button onclick="alert('This project is currently under development! Stay tuned')">View Project</button>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="contact" class="contact">
+
+    <h2>Get In Touch</h2>
+
+    <p>
+        I would love to hear from you. Feel free to get in touch with me!
+    </p>
+
+    <div class="contact-container">
+
+        <!-- Left Side -->
+        <div class="contact-info">
+
+            <h3>Contact Information</h3>
+
+            <p>
+                You can contact me through the following details.
+            </p>
+
+            <h4>Contact Details</h4>
+
+            <ul>
+                <li>📞 +92 3155867890</li>
+                <li>✉️ aizatariq@gmail.com</li>
+                <li>📍 Islamabad, Pakistan</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="contact-form">
+
+            <h3>Send Me a Message</h3>
+
+           
+<form action="https://formspree.io/f/mljgbznr" method="POST">
+    <label for="name">Full Name</label>
+    <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Enter your full name" 
+        required
+    >
+
+    <label for="email">Email</label>
+    <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Enter your email" 
+        required
+    >
+
+    <label for="message">Message</label>
+    <textarea 
+        id="message" 
+        name="message" 
+        placeholder="Write your message here..." 
+        rows="6" 
+        required
+    ></textarea>
+
+    <button type="submit">
+        Send Message
+    </button>
+</form>
+
+        </div>
+
+    </div>
+
+</section>
+<footer>
+
+    <h2>Aiza Bibi</h2>
+
+    <h4>Aspiring Frontend Developer</h4>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skills</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <p>© 2026 Aiza Bibi</p>
+
+    <p>All Rights Reserved</p>
+
+</footer>
+</body>
+</html>
